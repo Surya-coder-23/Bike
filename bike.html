@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yamaha MT-03</title>
+
+    <link rel="stylesheet" href="../testing-2/bike.css">
+</head>
+<body>
+    <div class="container">
+        <div class="path"></div>
+        <ul>
+            <li><a href="#" >Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">About-Us</a></li>
+        </ul>
+
+        <div class="mt  ">
+            <li><img src="./bike/bike-1.png" onclick="big('bike-1.png');path('pink'); bg('purple');"></li>
+            <li><img src="./bike/bike-2.png" onclick="big('bike-2.png');path('white');bg('purple');"></li>
+            <li><img src="./bike/bike-3.png" onclick="big('bike-3.png');path('red');bg('purple');"></li>
+        </div>
+        <div class="big-img">
+            <img src="./bike/bike-3.png" class="big">
+        </div>
+        <div class="content">
+            <p>&#x1f525;Let's Go&#x1f525;</p><br>
+            <h1>Ready to For Event</h1><br>
+            <h5>&#x1f60e;Bike Lover & Bike Riders&#x1f49d;</h5>
+        </div>
+    </div>
+
+
+    <script>
+
+
+        function big (img){
+    document.querySelector('big').src=img;
+}
+
+function path(color){
+    const path=document.querySelector('.path')
+    path.style.background =color;
+}
+
+function bg(background){
+    const bg=document.querySelector('.container')
+    bg.style.background =background;
+}
+    </script>
+</body>
+</html>
